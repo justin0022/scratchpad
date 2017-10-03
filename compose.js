@@ -9,4 +9,3 @@ const multiplyAndAdd5 = compose(
 )
 
 console.log(multiplyAndAdd5(5, 2))
-
