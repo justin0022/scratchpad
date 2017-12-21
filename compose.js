@@ -3,7 +3,7 @@ const multiply = (x, y) => x * y
 
 // const multiplyArr = (ar) => ar.reduce((a, b) => (a *= b))
 
-const compose = (...fns) => fns.reduce((f, g) => (...args) => f(g(...args)))
+const compose = (...fns) => (...args) => fns.reduce((f, g) => f(g(...args)))
 
 // fns.reduce((f, g) => (...args) => f(g(...args))) //=> (...args) => add5(multiply(...args))
 
