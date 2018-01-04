@@ -4,6 +4,6 @@ const obj = {
   key2: 'random'
 }
 
-const getObjectValues = (obj) => Object.keys(obj).map(i => obj[i])
+const getObjectValues = obj => Object.keys(obj).map(key => obj[key])
 
 console.log(getObjectValues(obj))

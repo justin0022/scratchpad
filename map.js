@@ -1,4 +1,4 @@
-const mapArr = (fn) => (arr) => arr.reduce((acc, cur) => [...acc, fn(cur)], [])
+const mapArr = fn => arr => arr.reduce((acc, cur) => [...acc, fn(cur)], [])
 
 const double = mapArr(x => x * 2)
 
