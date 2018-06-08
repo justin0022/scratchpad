@@ -1,4 +1,4 @@
-const quicksort = (arr) => {
+const quicksort = arr => {
   if (arr.length === 0) return []
   const first = arr.shift()
   const smallerSorted = quicksort(arr.filter(x => x <= first))
@@ -6,7 +6,7 @@ const quicksort = (arr) => {
   return [...smallerSorted, first, ...largerSorted]
 }
 
-const qs = (arr) => {
+const qs = arr => {
   if (arr.length === 0) return []
   const first = arr.shift()
   return [...qs(arr.filter(x => x <= first)), first, ...qs(arr.filter(x => x > first))]
