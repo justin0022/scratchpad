@@ -4,6 +4,6 @@ const obj = {
   key2: 'random'
 }
 
-const getObjKeys = obj => Object.keys(obj)
+const getObjKeys = Object.keys
 
 console.log(getObjKeys(obj))
